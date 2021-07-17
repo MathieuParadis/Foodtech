@@ -1,0 +1,160 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #242424;
+	border: solid black;
+}
+
+/* Style the tab */
+.tab {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+  border: 1px solid #ccc;
+	border-radius: 1em;
+	padding-left: 0;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tablinks {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;               
+  background-color:#FFFF00;
+  height: 1px;
+}
+
+/* Change background color of buttons on hover */
+.tablinks:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tablinks.active {
+  background-color: #ccc;
+} 
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+
+#home-img {
+  display: block;
+  padding: 6px 12px;
+}
+
+#menu-display {
+  display: block;
+	margin-top: 3em;
+  padding: 6px 12px;
+}
+
+#menu-display h3 {
+  display: block;
+	margin-bottom: 1em;
+  padding: 6px 12px;
+	color: brown;
+}
+
+
+/* photo grid */
+.container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Pic1 Pic1 Pic4"
+    "Pic1 Pic1 Pic5"
+    "Pic2 Pic3 Pic6";
+}
+
+.Pic1 { 
+	grid-area: Pic1; 
+	border: solid black;
+}
+
+.Pic2 { 
+	grid-area: Pic2; 
+	border: solid black;
+}
+
+.Pic3 { 
+	grid-area: Pic3;
+	border: solid black; 
+}
+
+.Pic4 { 
+	grid-area: Pic4; 
+	border: solid black;
+}
+
+.Pic5 { 
+	grid-area: Pic5;
+	border: solid black; 
+}
+
+.Pic6 { 
+	grid-area: Pic6; 
+	border: solid black;
+}
+
+.img-tab {
+	max-width: 100%;
+}
+
+
+/* pop up */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 60%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+  background-color: #eeeeee;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 33% !important;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

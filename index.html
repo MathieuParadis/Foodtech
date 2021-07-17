@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Hacking Morpion</title>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lobster">
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1 class="title">La traviata</h1>
+        <h2 class="concept">Produits frais et bio</h2>
+
+        <!-- Tab links -->
+        <ul class="tab">
+            <li class="nav-item">
+                <a class="tablinks active" onclick="openTab(event, 'home-img')">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="tablinks" onclick="openTab(event, 'menu')">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="tablinks" onclick="openTab(event, 'photos')">Photos</a>
+            </li>
+        </ul>
+
+        <hr>
+    
+        <!-- Tab content -->
+        <div id="home-img" class="tabcontent">
+            <img src="https://images.pexels.com/photos/984888/pexels-photo-984888.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="photo_resto">
+        </div>
+    
+        <div id="menu" class="tabcontent">
+            <button type="button" class="btn btn-primary" onclick="changeMenu()">Generate menu</button>
+
+            <div id="menu-display">
+                <h3 class="menu-title">Here is the menu</h3>
+                <h5 class="rand-menu mb-4"></h5>
+                <h5 class="rand-menu mb-4"></h5>
+                <h5 class="rand-menu mb-4"></h5>
+                <h5 class="rand-menu mb-4"></h5>
+            </div>
+        </div>
+
+        <div id="photos" class="tabcontent">
+            <div class="container">
+                <div class="Pic1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="https://images.pexels.com/photos/1209776/pexels-photo-1209776.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-tab" id="img1" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="Pic2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="https://images.pexels.com/photos/4940719/pexels-photo-4940719.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-tab" id="img2" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="Pic3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="https://images.pexels.com/photos/6127275/pexels-photo-6127275.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-tab" id="img3" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="Pic4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img src="https://images.pexels.com/photos/323682/pexels-photo-323682.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-tab" id="img4" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="Pic5" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <!-- <img src="https://images.pexels.com/photos/6127334/pexels-photo-6127334.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-tab" id="img5" draggable="true" ondragstart="drag(event)"> -->
+                </div>
+                <div class="Pic6" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <!-- <img src="https://images.pexels.com/photos/1546039/pexels-photo-1546039.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img-tab" id="img6" draggable="true" ondragstart="drag(event)"> -->
+                </div>
+              </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p><b>Ne nous faites pas croire que vous nous quittez déjà ...</b></p>
+                <p><b>Pensez à faire un tour sur notre page Facebook avant de filer ;)</b></p>
+            </div>
+        </div>
+
+        
+
+
+        <script src="./script.js"></script>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    </body>
+</html>
